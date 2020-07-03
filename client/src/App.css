@@ -1,0 +1,426 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    
+  }
+  .flex{
+    display:flex
+  }
+  .fa-trash:hover{
+    cursor: pointer;
+color:red
+  }
+
+  header{
+    position: fixed;
+    background: #22242A;
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+  }
+  
+  .left_area h3{
+    color: #fff;
+    margin-left: 40px;
+   
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: capitalize; 
+  }
+  
+  .left_area span{
+    color: #19B3D3;
+  }
+  
+  .logout_btn{
+    padding: 5px;
+    background: #19B3D3;
+    text-decoration: none;
+    float: right;
+    margin-top: -31px; 
+
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+  }
+  
+  .logout_btn:hover{
+    background: #0B87A6;
+  }
+  
+  .sidebar {
+    background: #2f323a;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+  }
+  
+  .sidebar .profile_image{
+    display: inline-block; 
+    height: 100px;
+    width: 100px;
+     /* margin-bottom: 50px;  */
+    z-index: 1;
+    /* position: relative;  */
+   background-color: #1369ce;
+    font-weight: bold;
+    font-size: 2em;
+    /* width: 100%; */
+    /* height: auto; */
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+    text-align: center;
+    line-height: 90px;
+  color:white
+  }
+  
+  .sidebar h5{
+    color: #ccc;
+    margin-top: 20px;
+    text-transform: capitalize; 
+    transition-property: left;
+  }
+  
+  .sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+     padding-left: 50px; 
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+  
+  }
+  
+  .sidebar a:hover{
+    background: #19B3D3;
+  }
+  
+  .sidebar i{
+    padding-right: 10px;
+  }
+  
+  label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    /* left: 300px; */
+    font-size: 20px;
+    margin: 18px 0;
+    transition: 0.5s;
+    transition-property: color;
+  }
+  
+  label #sidebar_btn:hover{
+    color: #19B3D3;
+    text-decoration: none;
+  }
+  
+   #check:checked ~ .sidebar{
+    left: -190px;
+    
+  } 
+   
+  #check:checked ~ .sidebar a span{
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+  }
+  
+  .content{
+    margin-left: 300px;
+ padding-top: 100px;
+  z-index: 1;
+ 
+     /* height: 100vh;  */
+     transition: 0.5s; 
+  }
+  
+  #check:checked ~ .content{
+    margin-left: 60px; 
+    background-color: cadetblue;
+  }
+  
+  #check{
+    display: none;
+  }
+  .right_area h6{
+     margin-left: 1038px;
+  color: azure;
+  margin-top: -31px;
+  }
+  .search-container {
+   
+    margin-left: 400px;
+  }
+  .Loading{
+    margin:100px auto;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    
+  }
+  
+  .our-team {
+    /* margin-left: 12px; */
+    padding: 30px 0 40px;
+    margin-bottom: 30px;
+    background-color: #f7f5ec;
+  
+    
+    position: relative;
+    /* height: 300px; */
+    width: 300px;
+  }
+   .name{
+    display:flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
+  } 
+  
+  .our-team .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    /* text-transform: capitalize;  */
+    
+  }
+  .our-team .name{
+   
+    display: block;
+    font-size: 20px;
+    color: black;
+   
+    font-weight: bold;
+  
+  }
+  
+  /* .our-team .social {
+    width:100%;
+    padding: 0;
+    margin: 0;
+    background-color: #1369ce;
+    position: absolute;
+     bottom: -100px; 
+    left: 0;
+    transition: all 0.5s ease 0s;
+    display: flex;
+    flex-direction: row;
+   
+  } */
+  
+  .our-team:hover .social {
+    bottom: 0;
+    height: 60px;
+  }
+  
+  
+  .our-team .social button{
+    
+    text-align: center;
+     margin-left: 50px; 
+    margin-right: auto;
+    color:black;
+    width: 80px;
+    height: 40px;
+    color:#2980B9;
+    border-radius: 4px;
+    border:1px solid white;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 1em;
+    border:none;
+  
+  }
+  
+   .our-team .social button:hover {
+     
+   cursor: pointer;
+     color: #1369ce; 
+    background-color: #f7f5ec;
+    opacity:0.6
+  } 
+ 
+ 
+
+  
+  .addModal{
+  background-color:white;
+    height: 180px;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 100px ;
+  
+  }
+  .formModal{
+    display: flex;
+ 
+    flex-direction:row;
+ margin-left: 12px;
+  margin-top: 12px;
+   justify-content: flex-start;
+   
+  }
+ 
+  
+  
+  .formModal button{
+  
+    margin-left: 50px;
+    cursor: pointer;
+  
+    border-radius: 3px;
+    border: 1px solid black;
+    background: none;
+  }
+ 
+.jobdiv{
+  width:700px;
+ 
+  background:#e9ecef;
+  margin-left: -12px;
+  margin-right: 12px;
+}
+
+/*sign in up*/
+.container{
+  margin-top: 70px;
+}
+.btn-flat {
+  margin: 30px 0px;
+}
+.row{
+  padding-left: 190px;
+}
+.user{
+  width: 80px;
+  height: 80px;
+}
+.list_users{
+  position: absolute;
+  left: -6%;
+  top: 40%;
+ 
+  width: 1500px;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.input-field{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.card{
+  border:2px solid green;
+  width: 400px;
+
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
